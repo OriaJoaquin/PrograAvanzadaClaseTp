@@ -64,7 +64,7 @@ public class Polinomio {
 		return 1;
 	}
 	
-	public double evaluarProgDinamica(double x ) {
+	public double evaluarProgDinamica(double x ) { //O(n)
 		double potenciaCalculada = 1;
 	    double resultado = this.coeficientes[this.grado];
 	    
@@ -76,7 +76,7 @@ public class Polinomio {
 		return resultado;
 	}
 	
-	public double evaluarMejorada(double x) {
+	public double evaluarMejorada(double x) { //O(n)
 		double resultado=0;
 		
 		//Math.pow(a, b) complejidad o(1)
@@ -87,7 +87,7 @@ public class Polinomio {
 		return resultado;
 	}
 	
-	public double evaluarHorner(double x) {
+	public double evaluarHorner(double x) { //O(n)
         double result = 0;
         for (int i = this.coeficientes.length - 1; i >= 0; i--)
             result = this.coeficientes[i] + (x * result);
