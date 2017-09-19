@@ -40,18 +40,5 @@ public class BinomioDeNewton {
     	
     	return resultado;
     }
-    
-    public static void main(String args[]) {
-        //BinomioDeNewton bi = new BinomioDeNewton(3,2,2);
-    	BinomioDeNewton bi = new BinomioDeNewton(1,-3,5);
-        //bi.mostratTodosLosTerminos();
-        //System.out.println(bi.obtenerCoeficiente(2));
-        
-        double[] expandido = bi.obtenerBinomio();
-        
-        for(int i=0;i<expandido.length;i++) {
-        	System.out.println(expandido[i]);
-        }
-    } 
 	
 }
