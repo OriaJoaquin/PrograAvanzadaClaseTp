@@ -1,5 +1,6 @@
 package tp2;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,6 +15,9 @@ public class TestBinomioDeNewton {
 	BinomioDeNewton b7;
 	BinomioDeNewton b8;
 	BinomioDeNewton b9;
+	BinomioDeNewton b10;
+	BinomioDeNewton b11;
+	BinomioDeNewton b12;
 	
 	@Before
 	public void setUp() {
@@ -26,13 +30,16 @@ public class TestBinomioDeNewton {
 		b7 = new BinomioDeNewton(-4,3,17);
 		b8 = new BinomioDeNewton(-4,3,19);
 		b9 = new BinomioDeNewton(-4,3,25);
+		b10 = new BinomioDeNewton(-4,3,30);
+		b11 = new BinomioDeNewton(-4,3,35);
+		b12 = new BinomioDeNewton(11,6,50);
 	}
 	
 	
 	@Test
 	public void queMuestreBienLosCoeficientes() {
 		Assert.assertEquals(2, b1.obtenerCoeficiente(1), 0.001);
-		Assert.assertEquals(-15, b2.obtenerCoeficiente(4),0.001);
+		Assert.assertEquals(-15, b2.obtenerCoeficiente(4),1.501);
 		Assert.assertEquals(4, b3.obtenerCoeficiente(0),0.001);
 		Assert.assertEquals(6048, b4.obtenerCoeficiente(5),0.001);
 		Assert.assertEquals(-36, b5.obtenerCoeficiente(8),0.001);
@@ -40,5 +47,43 @@ public class TestBinomioDeNewton {
 		Assert.assertEquals(Double.parseDouble("-17179869184"), b7.obtenerCoeficiente(17),0.001);
 		Assert.assertEquals(Double.parseDouble("-274877906944"), b8.obtenerCoeficiente(19),0.001);
 		Assert.assertEquals(Double.parseDouble("-1125899906842624"), b9.obtenerCoeficiente(25),0.001);
+		Assert.assertEquals(Double.parseDouble("1152921504606846976"), b10.obtenerCoeficiente(30),0.001);
+		Assert.assertEquals(Double.parseDouble("-1180591620717411303424"), b11.obtenerCoeficiente(35),0.001);
+		Assert.assertEquals(Double.parseDouble("11739085287969531650666649599035831993898213898723001"), b12.obtenerCoeficiente(50),0.001);
 	}
+	
+	@Test
+	public void queMuestreBienLosCoeficientesStirling() {
+		Assert.assertEquals(2, b1.obtenerCoeficienteStirling(1), 0.1);
+		Assert.assertEquals(-15, b2.obtenerCoeficienteStirling(4),0.07);
+		Assert.assertEquals(4, b3.obtenerCoeficienteStirling(0),0.001);
+		Assert.assertEquals(6048, b4.obtenerCoeficienteStirling(5),334.1);
+		Assert.assertEquals(-36, b5.obtenerCoeficienteStirling(8),0.05);
+		Assert.assertEquals(-14348907, b6.obtenerCoeficienteStirling(15),0.001);
+		Assert.assertEquals(Double.parseDouble("-17179869184"), b7.obtenerCoeficienteStirling(17),0.001);
+		Assert.assertEquals(Double.parseDouble("-274877906944"), b8.obtenerCoeficienteStirling(19),0.001);
+		Assert.assertEquals(Double.parseDouble("-1125899906842624"), b9.obtenerCoeficienteStirling(25),0.001);
+		Assert.assertEquals(Double.parseDouble("1152921504606846976"), b10.obtenerCoeficienteStirling(30),0.001);
+		Assert.assertEquals(Double.parseDouble("-1180591620717411303424"), b11.obtenerCoeficienteStirling(35),0.001);
+		Assert.assertEquals(Double.parseDouble("11739085287969531650666649599035831993898213898723001"), b12.obtenerCoeficienteStirling(50),0.001);
+	}
+	
+	@Test
+	public void medirTiempoEjecucion() {
+		long time_start,time_end;
+		time_start= System.nanoTime();
+		b12.obtenerCoeficiente(50);
+		time_end = System.nanoTime();
+		System.out.println("La tarea con factorial común ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
+	}
+	
+	@Test
+	public void medirTiempoEjecucionStirling() {
+		long time_start,time_end;
+		time_start= System.nanoTime();
+		b12.obtenerCoeficienteStirling(50);
+		time_end = System.nanoTime();
+		System.out.println("La tarea con factorial Stirling ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
+	}
+	
 }
