@@ -31,7 +31,7 @@ public class BinomioDeNewton {
     	return combinatoria(this.n,k) * Math.pow(a, k) * Math.pow(b, this.n-k);
     }
     
-    public double[] obtenerBinomio(){
+    public double[] obtenerPolinomio(){
     	double[] resultado= new double[this.n + 1];
     	
     	for(int i=0;i<=this.n;i++) {
