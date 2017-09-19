@@ -12,7 +12,7 @@ public class BinomioDeNewton {
         this.b = b;
     }
     
-    public double factorial(int n){
+    private double factorial(int n){
         int cont = 1;
         if(n == 0){
             return 1;
@@ -23,36 +23,35 @@ public class BinomioDeNewton {
         return cont;
     }
     
-    
-    public void mostrarTermino(int k){
-        double termino = this.factorial(n)/(this.factorial(k)*this.factorial(n-k));
-        System.out.println(termino +"("+this.a+"x)^"+(n-k)+" "+this.b+"^"+(k));
-    }
-     
-    public double valorParaUn(double x){
-    	double valor = 0;
-    	double termino;
-    	for(int k=0;k<n;k++){
-    		termino = this.factorial(n)/(this.factorial(k)*this.factorial(n-k));
-    		valor += termino*Math.pow(this.a*x,n-k)*Math.pow(this.b, k);
-    	}
-    	return valor;
+    private double combinatoria(int n, int k) {
+    	return factorial(n)/(factorial(k)*(factorial(n-k)));
     }
     
-    public double[] expandirBinomio() {
+    public double obtenerCoeficiente(int k) {
+    	return combinatoria(this.n,k) * Math.pow(a, k) * Math.pow(b, this.n-k);
+    }
+    
+    public double[] obtenerBinomio(){
+    	double[] resultado= new double[this.n + 1];
     	
-    	return new double[4];
+    	for(int i=0;i<=this.n;i++) {
+    		resultado[i]= this.obtenerCoeficiente(n-i);
+    	}
+    	
+    	return resultado;
     }
     
-    public void mostratTodosLosTerminos(){
-        for(int  i = 0;i<=n;i++){
-            this.mostrarTermino(i);
-        }
-    }
     public static void main(String args[]) {
-        BinomioDeNewton bi = new BinomioDeNewton(1,-3,5);
+        //BinomioDeNewton bi = new BinomioDeNewton(3,2,2);
+    	BinomioDeNewton bi = new BinomioDeNewton(1,-3,5);
         //bi.mostratTodosLosTerminos();
-        System.out.println(bi.valorParaUn(2));
+        //System.out.println(bi.obtenerCoeficiente(2));
+        
+        double[] expandido = bi.obtenerBinomio();
+        
+        for(int i=0;i<expandido.length;i++) {
+        	System.out.println(expandido[i]);
+        }
     } 
 	
 }
