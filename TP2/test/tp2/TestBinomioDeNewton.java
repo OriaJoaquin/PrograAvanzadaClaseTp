@@ -72,7 +72,7 @@ public class TestBinomioDeNewton {
 	public void medirTiempoEjecucion() {
 		long time_start,time_end;
 		time_start= System.nanoTime();
-		b12.obtenerCoeficiente(50);
+		queMuestreBienLosCoeficientes();
 		time_end = System.nanoTime();
 		System.out.println("La tarea con factorial común ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
 	}
@@ -81,7 +81,7 @@ public class TestBinomioDeNewton {
 	public void medirTiempoEjecucionStirling() {
 		long time_start,time_end;
 		time_start= System.nanoTime();
-		b12.obtenerCoeficienteStirling(50);
+		queMuestreBienLosCoeficientesStirling();
 		time_end = System.nanoTime();
 		System.out.println("La tarea con factorial Stirling ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
 	}
