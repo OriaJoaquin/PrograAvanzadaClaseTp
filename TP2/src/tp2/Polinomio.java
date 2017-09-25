@@ -101,16 +101,16 @@ public class Polinomio {
 		long time_start,time_end;
 		Polinomio [] vecPolinomio = new Polinomio[10];
 
-		vecPolinomio[0] = new Polinomio(1, new double[]{2});
-		vecPolinomio[1] = new Polinomio(2, new double[]{2,5});
-		vecPolinomio[2] = new Polinomio(3, new double[]{2,5,2});
-		vecPolinomio[3] = new Polinomio(4, new double[]{2,5,2,6});
-		vecPolinomio[4] = new Polinomio(5, new double[]{2,5,2,6,8});
-		vecPolinomio[5] = new Polinomio(6, new double[]{2,5,2,6,8,3});
-		vecPolinomio[6] = new Polinomio(7, new double[]{2,5,2,6,8,3,7});
-		vecPolinomio[7] = new Polinomio(8, new double[]{2,5,2,6,8,3,7,9});
-		vecPolinomio[8] = new Polinomio(9, new double[]{2,5,2,6,8,3,7,9,0});
-		vecPolinomio[9] = new Polinomio(10, new double[]{2,5,2,6,8,3,7,9,0,1});
+		vecPolinomio[0] = new Polinomio(1, new double[]{1,2});
+		vecPolinomio[1] = new Polinomio(2, new double[]{1,2,5});
+		vecPolinomio[2] = new Polinomio(3, new double[]{1,2,5,2});
+		vecPolinomio[3] = new Polinomio(4, new double[]{1,2,5,2,6});
+		vecPolinomio[4] = new Polinomio(5, new double[]{1,2,5,2,6,8});
+		vecPolinomio[5] = new Polinomio(6, new double[]{1,2,5,2,6,8,3});
+		vecPolinomio[6] = new Polinomio(7, new double[]{1,2,5,2,6,8,3,7});
+		vecPolinomio[7] = new Polinomio(8, new double[]{1,2,5,2,6,8,3,7,9});
+		vecPolinomio[8] = new Polinomio(9, new double[]{1,2,5,2,6,8,3,7,9,0});
+		vecPolinomio[9] = new Polinomio(10, new double[]{1,2,5,2,6,8,3,7,9,0,1});
 
 		for(i=0;i<vecPolinomio.length;i++) {
 			
@@ -134,11 +134,11 @@ public class Polinomio {
 			time_end = System.nanoTime();
 			System.out.println("La tarea de Ejecución Mejorada ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
 			
-			/*time_start= System.nanoTime();
+			time_start= System.nanoTime();
 			vecPolinomio[i].evaluarProgDinamica(0);
 			time_end = System.nanoTime();
 			System.out.println("La tarea de Ejecución ProgDinamica ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
-			*/
+			
 			System.out.println("===============================================================================");
 		}
 		
