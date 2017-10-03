@@ -6,7 +6,7 @@ public class BinomioDeNewton {
     private double a;
     private double b;
     
-    public  BinomioDeNewton(double a, double b, int n){
+    public BinomioDeNewton(double a, double b, int n){
         this.n = n;
         this.a = a;
         this.b = b;

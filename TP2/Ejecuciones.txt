@@ -1,0 +1,144 @@
+Grado polinomio:2
+La tarea de Ejecución MSucesivas ha tomado 10264 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 15396 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 10691 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 7270 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 89380 nanosegundos.
+La tarea de Ejecución Pow ha tomado 30791 nanosegundos.
+===============================================================================
+Grado polinomio:3
+La tarea de Ejecución MSucesivas ha tomado 3849 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 4276 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 4704 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2565 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 6842 nanosegundos.
+La tarea de Ejecución Pow ha tomado 10692 nanosegundos.
+===============================================================================
+Grado polinomio:4
+La tarea de Ejecución MSucesivas ha tomado 3849 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 5132 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 5559 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2566 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 6415 nanosegundos.
+La tarea de Ejecución Pow ha tomado 13257 nanosegundos.
+===============================================================================
+Grado polinomio:5
+La tarea de Ejecución MSucesivas ha tomado 4276 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 5560 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 6843 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2566 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 5559 nanosegundos.
+La tarea de Ejecución Pow ha tomado 15395 nanosegundos.
+===============================================================================
+Grado polinomio:6
+La tarea de Ejecución MSucesivas ha tomado 4277 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 5559 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 9409 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2138 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 5987 nanosegundos.
+La tarea de Ejecución Pow ha tomado 17534 nanosegundos.
+===============================================================================
+Grado polinomio:7
+La tarea de Ejecución MSucesivas ha tomado 4705 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 6414 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 6843 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2138 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 5987 nanosegundos.
+La tarea de Ejecución Pow ha tomado 19244 nanosegundos.
+===============================================================================
+Grado polinomio:8
+La tarea de Ejecución MSucesivas ha tomado 4704 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 36778 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 9409 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2565 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 7270 nanosegundos.
+La tarea de Ejecución Pow ha tomado 22666 nanosegundos.
+===============================================================================
+Grado polinomio:9
+La tarea de Ejecución MSucesivas ha tomado 5987 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 9837 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 9408 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2566 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 6415 nanosegundos.
+La tarea de Ejecución Pow ha tomado 25660 nanosegundos.
+===============================================================================
+Grado polinomio:10
+La tarea de Ejecución MSucesivas ha tomado 6415 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 27370 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 8125 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 3849 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 14968 nanosegundos.
+La tarea de Ejecución Pow ha tomado 67142 nanosegundos.
+===============================================================================
+Grado polinomio:20
+La tarea de Ejecución MSucesivas ha tomado 14112 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 8553 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 10264 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 2993 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 9409 nanosegundos.
+La tarea de Ejecución Pow ha tomado 51746 nanosegundos.
+===============================================================================
+Grado polinomio:30
+La tarea de Ejecución MSucesivas ha tomado 29081 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 20527 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 17962 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 4276 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 176194 nanosegundos.
+La tarea de Ejecución Pow ha tomado 81254 nanosegundos.
+===============================================================================
+Grado polinomio:40
+La tarea de Ejecución MSucesivas ha tomado 56878 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 22666 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 23949 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 5987 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 31219 nanosegundos.
+La tarea de Ejecución Pow ha tomado 113756 nanosegundos.
+===============================================================================
+Grado polinomio:50
+La tarea de Ejecución MSucesivas ha tomado 128724 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 37206 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 799715 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 6415 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 19672 nanosegundos.
+La tarea de Ejecución Pow ha tomado 181326 nanosegundos.
+===============================================================================
+Grado polinomio:60
+La tarea de Ejecución MSucesivas ha tomado 94512 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 41055 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 25659 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 6415 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 17961 nanosegundos.
+La tarea de Ejecución Pow ha tomado 147113 nanosegundos.
+===============================================================================
+Grado polinomio:70
+La tarea de Ejecución MSucesivas ha tomado 132145 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 26087 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 29936 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 5988 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 24376 nanosegundos.
+La tarea de Ejecución Pow ha tomado 176621 nanosegundos.
+===============================================================================
+Grado polinomio:80
+La tarea de Ejecución MSucesivas ha tomado 159088 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 32502 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 34212 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 7270 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 54740 nanosegundos.
+La tarea de Ejecución Pow ha tomado 198860 nanosegundos.
+===============================================================================
+Grado polinomio:90
+La tarea de Ejecución MSucesivas ha tomado 211262 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 40199 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 42338 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 8126 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 26087 nanosegundos.
+La tarea de Ejecución Pow ha tomado 235210 nanosegundos.
+===============================================================================
+Grado polinomio:200
+La tarea de Ejecución MSucesivas ha tomado 977192 nanosegundos.
+La tarea de Ejecución Recursiva ha tomado 162082 nanosegundos.
+La tarea de Ejecución RecursivaPar ha tomado 143692 nanosegundos.
+La tarea de Ejecución Mejorada ha tomado 14113 nanosegundos.
+La tarea de Ejecución ProgDinamica ha tomado 39772 nanosegundos.
+La tarea de Ejecución Pow ha tomado 497363 nanosegundos.
+===============================================================================

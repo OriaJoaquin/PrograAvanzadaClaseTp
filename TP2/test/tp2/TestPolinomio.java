@@ -107,7 +107,7 @@ public class TestPolinomio {
 		//Assert.assertEquals(3.561597291060478E16, p5.evaluarProgDinamica(45),0.001);
 		//Assert.assertEquals(1.2325951644078317E70, p6.evaluarProgDinamica(5),0.001);
 		//Assert.assertEquals(8.758115402030111E105, p7.evaluarProgDinamica(5),0.001);
-		Assert.assertEquals(6.136366831622159E210, p8.evaluarProgDinamica(5),0.001);
+		Assert.assertEquals(6.136366831622159E210, p8.evaluarDinamica(5),0.001);
 		time_end = System.nanoTime();
 		System.out.println("La tarea de Ejecución con Progamación dinámica ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
 	}
