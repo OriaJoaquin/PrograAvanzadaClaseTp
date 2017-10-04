@@ -70,20 +70,28 @@ public class BinomioDeNewton {
         
 		int i;
 		long time_start,time_end;
-		BinomioDeNewton [] vecBinomioDeNewton = new BinomioDeNewton[10];
+		BinomioDeNewton [] vecBinomioDeNewton = new BinomioDeNewton[17];
 
-		vecBinomioDeNewton[0] = new BinomioDeNewton(1,1,1);
-		vecBinomioDeNewton[1] =  new BinomioDeNewton(1,-3,2);
-		vecBinomioDeNewton[2] = new BinomioDeNewton(3,2,3);
-		vecBinomioDeNewton[3] = new BinomioDeNewton(2,-3,4);
-		vecBinomioDeNewton[4] = new BinomioDeNewton(-1,-4,5);
-		vecBinomioDeNewton[5] = new BinomioDeNewton(-3,2,6);
-		vecBinomioDeNewton[6] = new BinomioDeNewton(-4,3,7);
-		vecBinomioDeNewton[7] = new BinomioDeNewton(-4,3,8);
-		vecBinomioDeNewton[8] = new BinomioDeNewton(-4,3,9);
-		vecBinomioDeNewton[9] = new BinomioDeNewton(-4,3,10);
-
+		vecBinomioDeNewton[0] = new BinomioDeNewton(4,7,3);
+		vecBinomioDeNewton[1] = new BinomioDeNewton(4,7,4);
+		vecBinomioDeNewton[2] = new BinomioDeNewton(4,7,5);
+		vecBinomioDeNewton[3] = new BinomioDeNewton(4,7,6);
+		vecBinomioDeNewton[4] = new BinomioDeNewton(4,7,7);
+		vecBinomioDeNewton[5] = new BinomioDeNewton(4,7,8);
+		vecBinomioDeNewton[6] = new BinomioDeNewton(4,7,9);
+		vecBinomioDeNewton[7] = new BinomioDeNewton(4,7,10);
+		vecBinomioDeNewton[8] = new BinomioDeNewton(4,7,20);
+		vecBinomioDeNewton[9] = new BinomioDeNewton(4,7,30);
+		vecBinomioDeNewton[10] = new BinomioDeNewton(4,7,40);
+		vecBinomioDeNewton[11] = new BinomioDeNewton(4,7,50);
+		vecBinomioDeNewton[12] = new BinomioDeNewton(4,7,60);
+		vecBinomioDeNewton[13] = new BinomioDeNewton(4,7,70);
+		vecBinomioDeNewton[14] = new BinomioDeNewton(4,7,80);
+		vecBinomioDeNewton[15] = new BinomioDeNewton(4,7,90);
+		vecBinomioDeNewton[16] = new BinomioDeNewton(4,7,200);
+		
 		for(i=0;i<vecBinomioDeNewton.length;i++) {
+			System.out.println("Grado del Binomio de Newton:" + vecBinomioDeNewton[i].n);
 			
 			time_start= System.nanoTime();
 			vecBinomioDeNewton[i].obtenerCoeficiente(0);
