@@ -1,11 +1,3 @@
-Grado polinomio:2
-La tarea de Ejecución MSucesivas ha tomado 10264 nanosegundos.
-La tarea de Ejecución Recursiva ha tomado 15396 nanosegundos.
-La tarea de Ejecución RecursivaPar ha tomado 10691 nanosegundos.
-La tarea de Ejecución Mejorada ha tomado 7270 nanosegundos.
-La tarea de Ejecución ProgDinamica ha tomado 89380 nanosegundos.
-La tarea de Ejecución Pow ha tomado 30791 nanosegundos.
-===============================================================================
 Grado polinomio:3
 La tarea de Ejecución MSucesivas ha tomado 3849 nanosegundos.
 La tarea de Ejecución Recursiva ha tomado 4276 nanosegundos.
