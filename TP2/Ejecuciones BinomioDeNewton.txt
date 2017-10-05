@@ -1,0 +1,64 @@
+Grado del Binomio de Newton:4
+La tarea de Ejecución con Factorial normal ha tomado 1701 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:5
+La tarea de Ejecución con Factorial normal ha tomado 1701 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:6
+La tarea de Ejecución con Factorial normal ha tomado 1701 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1417 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:7
+La tarea de Ejecución con Factorial normal ha tomado 1701 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:8
+La tarea de Ejecución con Factorial normal ha tomado 1701 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:9
+La tarea de Ejecución con Factorial normal ha tomado 1701 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:10
+La tarea de Ejecución con Factorial normal ha tomado 1701 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1418 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:20
+La tarea de Ejecución con Factorial normal ha tomado 1984 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1700 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:30
+La tarea de Ejecución con Factorial normal ha tomado 1985 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1985 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:40
+La tarea de Ejecución con Factorial normal ha tomado 2551 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:50
+La tarea de Ejecución con Factorial normal ha tomado 2835 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:60
+La tarea de Ejecución con Factorial normal ha tomado 2835 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1700 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:70
+La tarea de Ejecución con Factorial normal ha tomado 3685 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1417 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:80
+La tarea de Ejecución con Factorial normal ha tomado 3969 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1701 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:90
+La tarea de Ejecución con Factorial normal ha tomado 4253 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 1984 nanosegundos.
+===============================================================================
+Grado del Binomio de Newton:200
+La tarea de Ejecución con Factorial normal ha tomado 9355 nanosegundos.
+La tarea de Ejecución con Factorial Stirling ha tomado 10773 nanosegundos.
+===============================================================================

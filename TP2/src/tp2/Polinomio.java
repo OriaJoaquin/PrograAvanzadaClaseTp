@@ -1,7 +1,6 @@
 package tp2;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class Polinomio {
 	private int grado;
@@ -69,7 +68,6 @@ public class Polinomio {
 
 	public double evaluarDinamica(double x) {
 		double res = 0;
-		int grado = this.grado;
 		double[] vPot = new double[this.grado + 1];
 		Arrays.fill(vPot, 0);
 		vPot[this.coeficientes.length-1] = 1;
@@ -186,6 +184,10 @@ public class Polinomio {
 			time_end = System.nanoTime();
 			System.out.println("La tarea de Ejecución Pow ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
 			
+			time_start= System.nanoTime();
+			vecPolinomio[i].evaluarHorner(0);
+			time_end = System.nanoTime();
+			System.out.println("La tarea de Ejecución Horner ha tomado "+ ( time_end - time_start ) +" nanosegundos.");
 			
 			System.out.println("===============================================================================");
 		}
