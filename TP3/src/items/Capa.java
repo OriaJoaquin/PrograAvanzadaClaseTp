@@ -3,11 +3,11 @@ package items;
 import unidad.Unidad;
 
 public class Capa extends Items {
-
-	//DUPLICA ENERGÍA PENDIENTE
 	
 	public Capa(Unidad unidad) {
 		super(unidad);
+		unidad.setEnergia(unidad.getEnergia() * 2);
+		unidad.setEnergiaTope(unidad.getEnergiaTope() * 2);
 	}
 
 	@Override

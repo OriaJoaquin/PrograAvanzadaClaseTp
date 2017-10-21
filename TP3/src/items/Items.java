@@ -9,7 +9,7 @@ public abstract class Items extends Unidad{
 	protected Unidad unidad;
 	
 	public Items(Unidad unidad) {
-		super(unidad.getSalud(),unidad.getAtaque(),unidad.getUbicacion());
+		super(unidad.getSalud(),unidad.getAtaque(),unidad.getUbicacion(),unidad.getEnergia());
 		this.unidad = unidad;
 	}
 	

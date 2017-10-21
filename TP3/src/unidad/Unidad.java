@@ -3,8 +3,11 @@ package unidad;
 //Template Method
 public abstract class Unidad {
 
+	protected double saludTope;
+	protected double energiaTope;
 	protected double salud;
 	protected double ataque;
+	protected double energia;
 	protected Punto ubicacion;
 
 	public Unidad() {
@@ -12,10 +15,27 @@ public abstract class Unidad {
 
 	public Unidad(double salud, double ataque, Punto ubicacion) {
 		this.salud = salud;
+		this.saludTope = salud;
 		this.ataque = ataque;
 		this.ubicacion = ubicacion;
+		this.energia = 0;
+		this.energiaTope = 0;
+	}
+	
+	public Unidad(double salud, double ataque, Punto ubicacion, double energia) {
+		this(salud,ataque,ubicacion);
+		this.energia = energia;
+		this.energiaTope = energia;
+	}
+	
+	public double getEnergia() {
+		return energia;
 	}
 
+	public void setEnergia(double energia) {
+		this.energia = energia;
+	}
+	
 	public double getSalud() {
 		return salud;
 	}
@@ -26,6 +46,14 @@ public abstract class Unidad {
 
 	public double getAtaque() {
 		return ataque;
+	}
+
+	public double getEnergiaTope() {
+		return energiaTope;
+	}
+
+	public void setEnergiaTope(double energiaTope) {
+		this.energiaTope = energiaTope;
 	}
 
 	public void setAtaque(double ataque) {

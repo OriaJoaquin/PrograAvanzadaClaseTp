@@ -4,24 +4,13 @@ public class Soldado extends Unidad {
 
 	private static int DISTANCIAATAQUE = 0;
 	private static int CONSUMOENERGIAATAQUE = 10;
-	private static int ENERGIATOPE = 100;
-	private int energia;
 	
 	public Soldado(Punto ubicacion) {
-		super(200, 10, ubicacion);
-		this.energia = ENERGIATOPE;
-	}
-
-	public int getEnergia() {
-		return energia;
-	}
-
-	public void setEnergia(int energia) {
-		this.energia = energia;
+		super(200, 10, ubicacion,100);
 	}
 
 	public void consumirPocionDeAgua() {
-		this.energia = ENERGIATOPE;
+		this.energia = this.energiaTope;
 	}
 
 	@Override
