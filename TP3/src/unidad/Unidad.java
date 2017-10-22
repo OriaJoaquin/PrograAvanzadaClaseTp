@@ -1,6 +1,10 @@
 package unidad;
 
-//Template Method
+/**
+ * @author Lucas
+ * Esta clase actúa como Template Method
+ * Hace que sea una plantilla para todas las clases hijos que tenga.
+ */
 public abstract class Unidad {
 
 	protected double saludTope;

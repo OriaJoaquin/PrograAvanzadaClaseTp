@@ -13,13 +13,17 @@ public class Soldado extends Unidad {
 		this.energia = this.energiaTope;
 	}
 
+	/* (non-Javadoc)
+	 * @see unidad.Unidad#atacar(unidad.Unidad)
+	 * retorna enemigo para poder guardar los cambios.
+	 */
 	@Override
 	public Unidad atacar(Unidad enemigo) {
 		if (this.energia >= CONSUMOENERGIAATAQUE && this.distanciaConEnemigo(enemigo.ubicacion) == DISTANCIAATAQUE) {
 			this.energia -= CONSUMOENERGIAATAQUE;
 			enemigo = enemigo.defender(this);
 		}
-		return enemigo;//To save the modification of the enemy
+		return enemigo;
 	}
 
 }
