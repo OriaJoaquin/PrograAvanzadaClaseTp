@@ -4,14 +4,17 @@ import unidad.Unidad;
 
 public class Capa extends Items {
 	
+	private static final double MULTIPLICADORENERGIA = 2;
+	private static final double MULTIPLICADORATAQUE = 0.9;
+	
 	/**
 	 * Duplica la energía
 	 * @param unidad
 	 */
 	public Capa(Unidad unidad) {
 		super(unidad);
-		unidad.setEnergia(unidad.getEnergia() * 2);
-		unidad.setEnergiaTope(unidad.getEnergiaTope() * 2);
+		unidad.setEnergia(unidad.getEnergia() * MULTIPLICADORENERGIA);
+		unidad.setEnergiaTope(unidad.getEnergiaTope() * MULTIPLICADORENERGIA);
 	}
 
 	/* (non-Javadoc)
@@ -20,8 +23,8 @@ public class Capa extends Items {
 	 */
 	@Override
 	public Unidad atacar(Unidad enemigo) {
-		this.unidad.setAtaque(this.unidad.getAtaque()*0.9); 
-		return this.unidad.atacar(enemigo);
+		this.unidad.setAtaque(this.unidad.getAtaque()*MULTIPLICADORATAQUE); 
+		return this.unidad.atacar(enemigo);//SACAR
 	}
 
 }

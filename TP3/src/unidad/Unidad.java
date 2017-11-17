@@ -7,11 +7,14 @@ package unidad;
  */
 public abstract class Unidad {
 
+	private static final double MULTIPLICADORDEFENSA = 1;
+	private static final double INICIOENERGIA = 0;
 	protected double saludTope;
 	protected double energiaTope;
 	protected double salud;
 	protected double ataque;
 	protected double energia;
+	protected double defensa;
 	protected Punto ubicacion;
 
 	public Unidad() {
@@ -22,8 +25,9 @@ public abstract class Unidad {
 		this.saludTope = salud;
 		this.ataque = ataque;
 		this.ubicacion = ubicacion;
-		this.energia = 0;
-		this.energiaTope = 0;
+		this.defensa = MULTIPLICADORDEFENSA;
+		this.energia = INICIOENERGIA;
+		this.energiaTope = INICIOENERGIA;
 	}
 	
 	public Unidad(double salud, double ataque, Punto ubicacion, double energia) {
@@ -71,19 +75,29 @@ public abstract class Unidad {
 	public void setUbicacion(Punto ubicacion) {
 		this.ubicacion = ubicacion;
 	}
+	
+	public double getDefensa() {
+		return defensa;
+	}
+
+	public void setDefensa(double defensa) {
+		this.defensa = defensa;
+	}
 
 	protected double distanciaConEnemigo(Punto ubicacionEnemigo) {
 		return this.ubicacion.distanciaHasta(ubicacionEnemigo);
 	}
 
 	public abstract Unidad atacar(Unidad enemigo);
-
+	
 	public Unidad defender(Unidad enemigo) {
-		if (enemigo.ataque < this.salud)
-			this.salud -= enemigo.ataque;
+		double ataqueReal = (enemigo.ataque*this.defensa);
+		if ( ataqueReal< this.salud)
+			this.salud -= ataqueReal;
 		else
 			this.salud = 0;
 		return this;
 	}
+	
 	
 }
