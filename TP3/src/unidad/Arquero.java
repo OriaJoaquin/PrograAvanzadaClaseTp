@@ -1,7 +1,7 @@
 package unidad;
 
 public class Arquero extends Unidad {
-	
+
 	private static int DISTANCIAATAQUEMINIMA = 2;
 	private static int DISTANCIAATAQUEMAXIMA = 5;
 	private static int CANTIDADFLECHASTOPE = 20;
@@ -25,14 +25,13 @@ public class Arquero extends Unidad {
 	}
 
 	@Override
-	public Unidad atacar(Unidad enemigo) {
-
+	public void atacar(Unidad enemigo) {
 		double distanciaConElEnemigo = this.distanciaConEnemigo(enemigo.ubicacion);
-		if (this.cantidadFlechas > 0 && distanciaConElEnemigo >= DISTANCIAATAQUEMINIMA && distanciaConElEnemigo <= DISTANCIAATAQUEMAXIMA) {
-			this.cantidadFlechas--;			
-			enemigo = enemigo.defender(this);
+		if (this.cantidadFlechas > 0 && distanciaConElEnemigo >= DISTANCIAATAQUEMINIMA
+				&& distanciaConElEnemigo <= DISTANCIAATAQUEMAXIMA) {
+			this.cantidadFlechas--;
+			enemigo.defender(this);
 		}
-		return enemigo;
 	}
-	
+
 }

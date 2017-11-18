@@ -88,7 +88,7 @@ public abstract class Unidad {
 		return this.ubicacion.distanciaHasta(ubicacionEnemigo);
 	}
 
-	public abstract Unidad atacar(Unidad enemigo);
+	public abstract void atacar(Unidad enemigo);
 	
 	public Unidad defender(Unidad enemigo) {
 		double ataqueReal = (enemigo.ataque*this.defensa);
