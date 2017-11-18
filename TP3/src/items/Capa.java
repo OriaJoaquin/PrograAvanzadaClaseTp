@@ -28,5 +28,10 @@ public class Capa extends Items {
 		this.unidad.setAtaque(this.unidad.getAtaque() * MULTIPLICADORATAQUE);
 		this.unidad.atacar(enemigo);// SACAR
 	}
+	
+	@Override
+	protected double recibirAtaque(double puntosAtaque) {
+		return puntosAtaque;
+	}
 
 }

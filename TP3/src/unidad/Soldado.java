@@ -3,10 +3,14 @@ package unidad;
 public class Soldado extends Unidad {
 
 	private static int DISTANCIAATAQUE = 0;
+	private static int ENERGIAINICIAL = 100;
 	private static int CONSUMOENERGIAATAQUE = 10;
-
+	private static int SALUDINICIAL = 200;
+	private static int ATAQUEINICIAL = 10;
+	private static final double MULTIPLICADORDEFENSA = 1;
+	
 	public Soldado(Punto ubicacion) {
-		super(200, 10, ubicacion, 100);
+		super(SALUDINICIAL, ATAQUEINICIAL, ubicacion, ENERGIAINICIAL);
 	}
 
 	public void consumirPocionDeAgua() {
@@ -25,6 +29,11 @@ public class Soldado extends Unidad {
 			this.energia -= CONSUMOENERGIAATAQUE;
 			enemigo.defender(this);
 		}
+	}
+	
+	@Override
+	protected double recibirAtaque(double puntosAtaque) {
+		return puntosAtaque;
 	}
 
 }

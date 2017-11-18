@@ -4,8 +4,13 @@ import unidad.Unidad;
 
 public class Punial extends Items {
 
+	private static final int PUNTOSEXTRAATQUE = 3;
+	
 	public Punial(Unidad unidad) {
 		super(unidad);
+		this.unidad.setAtaque(this.unidad.getAtaque() + PUNTOSEXTRAATQUE);
+		if(this.manosDisponibles > 0)
+			this.manosDisponibles --;//= 1;
 	}
 
 	/*
@@ -15,19 +20,11 @@ public class Punial extends Items {
 	 */
 	@Override
 	public void atacar(Unidad enemigo) {
-		this.unidad.setAtaque(this.unidad.getAtaque() + 3);
 		this.unidad.atacar(enemigo);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see unidad.Unidad#defender(unidad.Unidad) Reduce the defense 3 points.
-	 */
 	@Override
-	public Unidad defender(Unidad enemigo) {
-		enemigo.setAtaque(enemigo.getAtaque() + 3);
-		return this.unidad.defender(enemigo);
+	protected double recibirAtaque(double puntosAtaque) {
+		return puntosAtaque;
 	}
-
 }

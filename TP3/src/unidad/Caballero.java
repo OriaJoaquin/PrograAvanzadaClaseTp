@@ -25,5 +25,10 @@ public class Caballero extends Unidad {
 			enemigo.defender(this);
 		}
 	}
+	
+	@Override
+	protected double recibirAtaque(double puntosAtaque) {
+		return puntosAtaque;
+	}
 
 }

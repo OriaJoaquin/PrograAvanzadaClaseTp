@@ -5,10 +5,12 @@ public class Arquero extends Unidad {
 	private static int DISTANCIAATAQUEMINIMA = 2;
 	private static int DISTANCIAATAQUEMAXIMA = 5;
 	private static int CANTIDADFLECHASTOPE = 20;
+	private static int SALUDINICIAL = 50;
+	private static int ATAQUEINICIAL = 5;
 	private int cantidadFlechas;
 
 	public Arquero(Punto ubicacion) {
-		super(50, 5, ubicacion);
+		super(SALUDINICIAL, ATAQUEINICIAL, ubicacion);
 		this.cantidadFlechas = CANTIDADFLECHASTOPE;
 	}
 
@@ -32,6 +34,11 @@ public class Arquero extends Unidad {
 			this.cantidadFlechas--;
 			enemigo.defender(this);
 		}
+	}
+	
+	@Override
+	protected double recibirAtaque(double puntosAtaque) {
+		return puntosAtaque;
 	}
 
 }

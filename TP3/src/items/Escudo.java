@@ -15,5 +15,10 @@ public class Escudo extends Items {
 	public void atacar(Unidad enemigo) {
 		this.unidad.atacar(enemigo);
 	}
+	
+	@Override
+	protected double recibirAtaque(double puntosAtaque) {
+		return puntosAtaque;
+	}
 
 }
