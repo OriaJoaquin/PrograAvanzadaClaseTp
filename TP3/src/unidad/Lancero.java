@@ -12,15 +12,8 @@ public class Lancero extends Unidad {
 	}
 
 	@Override
-	public void atacar(Unidad enemigo) {
-		double distanciaConElEnemigo = this.distanciaConEnemigo(enemigo.ubicacion);
-		if (distanciaConElEnemigo >= DISTANCIAATAQUEMINIMA && distanciaConElEnemigo <= DISTANCIAATAQUEMAXIMA) {
-			enemigo.defender(this);
-		}
+	public boolean condicionAtaque(double distanciaConElEnemigo) {
+		 return (distanciaConElEnemigo >= DISTANCIAATAQUEMINIMA && distanciaConElEnemigo <= DISTANCIAATAQUEMAXIMA);	
 	}
-	
-	@Override
-	protected double recibirAtaque(double puntosAtaque) {
-		return puntosAtaque;
-	}
+
 }

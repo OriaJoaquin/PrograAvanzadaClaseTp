@@ -7,7 +7,6 @@ public class Soldado extends Unidad {
 	private static int CONSUMOENERGIAATAQUE = 10;
 	private static int SALUDINICIAL = 200;
 	private static int ATAQUEINICIAL = 10;
-	private static final double MULTIPLICADORDEFENSA = 1;
 	
 	public Soldado(Punto ubicacion) {
 		super(SALUDINICIAL, ATAQUEINICIAL, ubicacion, ENERGIAINICIAL);
@@ -17,23 +16,15 @@ public class Soldado extends Unidad {
 		this.energia = this.energiaTope;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see unidad.Unidad#atacar(unidad.Unidad) retorna enemigo para poder guardar
-	 * los cambios.
-	 */
 	@Override
-	public void atacar(Unidad enemigo) {
-		if (this.energia >= CONSUMOENERGIAATAQUE && this.distanciaConEnemigo(enemigo.ubicacion) == DISTANCIAATAQUE) {
+	public boolean condicionAtaque(double distanciaConElEnemigo) {
+		if (this.energia >= CONSUMOENERGIAATAQUE && distanciaConElEnemigo == DISTANCIAATAQUE) {
 			this.energia -= CONSUMOENERGIAATAQUE;
-			enemigo.defender(this);
+			return true;
+		}else {
+			return false;
 		}
-	}
-	
-	@Override
-	protected double recibirAtaque(double puntosAtaque) {
-		return puntosAtaque;
+			
 	}
 
 }

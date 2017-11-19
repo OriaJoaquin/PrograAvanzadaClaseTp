@@ -8,30 +8,16 @@ public class Capa extends Items {
 	private static final double MULTIPLICADORATAQUE = 0.9;
 
 	/**
-	 * Duplica la energía
-	 * 
+	 * DUPLICA LA ENERGÍA.
+	 * REDUCE EL ATAQUE UN 10%.
 	 * @param unidad
 	 */
 	public Capa(Unidad unidad) {
 		super(unidad);
-		unidad.setEnergia(unidad.getEnergia() * MULTIPLICADORENERGIA);
-		unidad.setEnergiaTope(unidad.getEnergiaTope() * MULTIPLICADORENERGIA);
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see unidad.Unidad#atacar(unidad.Unidad) //Reduce the attack a 10%.
-	 */
-	@Override
-	public void atacar(Unidad enemigo) {
-		this.unidad.setAtaque(this.unidad.getAtaque() * MULTIPLICADORATAQUE);
-		this.unidad.atacar(enemigo);// SACAR
-	}
-	
-	@Override
-	protected double recibirAtaque(double puntosAtaque) {
-		return puntosAtaque;
+		this.energia = this.energia  * MULTIPLICADORENERGIA;
+		this.energiaTope = this.energiaTope * MULTIPLICADORENERGIA;
+		this.ataque *= MULTIPLICADORATAQUE;
 	}
 
 }
+
