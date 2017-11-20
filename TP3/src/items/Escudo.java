@@ -4,25 +4,21 @@ import unidad.Unidad;
 
 public class Escudo extends Items {
 
-	public Escudo(Unidad unidad) {
-		super(unidad);
-	}
-
-	@Override
-	public Unidad atacar(Unidad enemigo) {
-		return this.unidad.atacar(enemigo);
-	}
-	 
-	
+	private static final double MULTIPLICADORDEFENSAESCUDO = 0.4;
+	private static final int SINMANOSDISPONIBLES = 0;
 	
 	/**
-	 * @see unidad.Unidad#defender(unidad.Unidad)
-	 * Receive only 40% of attack.
+	 * REDUCE UN 40% LOS ATAQUES QUE SE RECIBEN.
+	 * @param unidad
 	 */
-	@Override
-	public Unidad defender(Unidad enemigo) {
-		enemigo.setAtaque(enemigo.getAtaque()*0.4); 
-		return this.unidad.defender(enemigo);		
+	public Escudo(Unidad unidad) {
+		super(unidad);
+		if(this.manosDisponibles > SINMANOSDISPONIBLES) {;
+			super.manosDisponibles --;
+			super.multiplicadorDefensa *=MULTIPLICADORDEFENSAESCUDO;
+		}else {
+			System.out.println("No tiene manos disponibles.");
+		}
 	}
-		
+
 }

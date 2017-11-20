@@ -4,16 +4,21 @@ import unidad.Unidad;
 
 /**
  * @author Lucas
- * Esta clase actúa como Decorator, haciendo que todos los métodos
- * de Unidad tengan algo extra.
+ * ESTA CLASE ACTÚA COMO DECORATOR, HACIENDO QUE TODOS LOS MÉTODOS DE UNIDAD TENGAN ALGO EXTRA.
  */
 public abstract class Items extends Unidad{
 
-	protected Unidad unidad;
+	protected Unidad unidad;//SE NECESITA, YA QUE SINO NUNCA TENDRÍA UNA INSTANCIA DE condicionAtaque.
 	
 	public Items(Unidad unidad) {
-		super(unidad.getSalud(),unidad.getAtaque(),unidad.getUbicacion(),unidad.getEnergia());
+		
+		//SE NECESITA HEREDAR DE UNIDAD, ASÍ SE PUEDEN SOBREESCRIBIR VARIOS DE SUS MÉTODOS.
+		super(unidad);
 		this.unidad = unidad;
 	}
 	
+	@Override
+	public boolean condicionAtaque(double distanciaConElEnemigo) {
+		return this.unidad.condicionAtaque(distanciaConElEnemigo);
+	}
 }
