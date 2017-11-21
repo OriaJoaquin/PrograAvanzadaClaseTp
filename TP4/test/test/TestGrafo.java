@@ -39,4 +39,12 @@ public class TestGrafo {
 		grafito3.generarGrafoRegularPorcentajeAdyacencia(4, 1);
 		System.out.println(grafito3.toString());
 	}
+	
+	@Test
+	public void testGrafoNPartito() {
+		System.out.println("Test grafo regular N Partito");
+		Grafo grafito3 = new Grafo();
+		grafito3.generarGrafoNPartito(4, 3);
+		System.out.println(grafito3.toString());
+	}
 }
