@@ -51,7 +51,10 @@ public class Grafo {
 				
 		for(int i=0; i<cantNodos; i++) {
 			for(int j=0; j<cantNodos;j++) {
-				if (this.nodos[i][j] == 0 && i != j && adyacencia > this.randomWithRange(1, 100)) {
+				//Condicion: que no haya pasado por la arista,
+				//No sea el valor de la diagonal
+				//y el porcentaje de adyacencia no este dentro del rango
+				if (this.nodos[i][j] == 0 && i != j && adyacencia/2 > this.randomWithRange(1, 100)) {
 					this.nodos[i][j] = 1;
 					this.nodos[j][i] = 1;
 					this.nodos[cantNodos-1-i][cantNodos-1-j]=1;
@@ -71,6 +74,9 @@ public class Grafo {
 		
 		for(int i=0; i<cantNodos; i++) {
 			for(int j=0; j<cantNodos;j++) {
+				//Condicion: que no haya pasado por la arista,
+				//No sea el valor de la diagonal
+				//y la cantidad de aristas del vertice no supere al grado dado
 				if (this.nodos[i][j] == 0 && i != j && getCantidadAristas(i) < grado) {
 					this.nodos[i][j] = 1;
 					this.nodos[j][i] = 1;
@@ -79,6 +85,40 @@ public class Grafo {
 				}
 			}
 		}
+		return this;
+	}
+	
+	public Grafo generarGrafoNPartito(final int cantNodos, final int particiones) {
+		this.nodos = new int[cantNodos][cantNodos];
+		int particion = 0 ;
+		
+		int[] vectorParticiones = new int[cantNodos];
+		for(int i=0; i<cantNodos; i++) {
+			vectorParticiones[i] = particion;
+			particion++;
+			if(particion == particiones) {
+				particion = 0;
+			}
+		}
+		
+		if (particiones > (cantNodos - 1)) {
+			return null;
+		}
+		
+		for(int i=0; i<cantNodos; i++) {
+			for(int j=0; j<cantNodos;j++) {
+				//Condicion: que no haya pasado por la arista,
+				//No sea el valor de la diagonal
+				//y la cantidad de aristas del vertice no supere al grado dado
+				if (this.nodos[i][j] == 0 && i != j && vectorParticiones[j]!=vectorParticiones[i]) {
+					this.nodos[i][j] = 1;
+					this.nodos[j][i] = 1;
+					this.nodos[cantNodos-1-i][cantNodos-1-j]=1;
+					this.nodos[cantNodos-1-j][cantNodos-1-i]=1;
+				}
+			}
+		}
+		
 		return this;
 	}
 
