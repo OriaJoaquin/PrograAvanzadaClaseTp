@@ -47,4 +47,13 @@ public class TestGrafo {
 		grafito3.generarGrafoNPartito(4, 3);
 		System.out.println(grafito3.toString());
 	}
+	
+	@Test
+	public void testColoreoSecuencial() {
+		System.out.println("Test Coloreo Secuencial");
+		Grafo grafito = new Grafo();
+		grafito.resolverGrafoPorSecuencialAleatorio(4,2);
+		System.out.println(grafito.toString());
+		System.out.println(grafito.getVectorColoreo());
+	}
 }
